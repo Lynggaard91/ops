@@ -1,0 +1,18 @@
+[project]
+name = "gitlab_group_fetcher"
+version = "1.0.0"
+description = "Fetches Gitlab Groups"
+authors = [
+    {name = "Carsten Jensen", email = "30240221+Lynggaard91@users.noreply.github.com"},
+]
+dependencies = ["git+https://github.com/python-gitlab/python-gitlab.git", "tqdm>=4.67.1", "logging>=0.4.9.6"]
+requires-python = ">=3.9"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["flit_core>=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.pdm]
+distribution = true
