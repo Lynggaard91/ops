@@ -11,6 +11,7 @@ logging.basicConfig(
 
 gitlab_token = os.environ["GITLAB_TOKEN"]
 gitlab_url = f"https://{os.environ['GITLAB_HOST']}"
+
 search_string = ""
 
 gl = gitlab.Gitlab(
